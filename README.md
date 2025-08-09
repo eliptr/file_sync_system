@@ -37,11 +37,17 @@ A C-based file synchronization system designed to monitor directories, sync chan
 /source/dir2 /backup/dir2
 -Start the Manager <br> 
 ./manager -c config.txt -l manager.log -n 5 <br> 
-  -c → path to configuration file
-  -l → path to log file
-  -n → max number of concurrent workers
+  -c → path to configuration file <br>
+  -l → path to log file <br>
+  -n → max number of concurrent workers <br>
 
 - Interact via Console <br>
 Open another terminal and run: <br>
 ./fss_console -l console.log
-
+<br>
+Available commands: <br>
+  - add <source> <target> -> adds directory to be backed up and monitored
+  - status <directory> -> prints information about a directory (last sync, errors, currently being monitored etc)
+  - cancel <source> -> stops monitoring directory
+  - sync <directory> -> syncs immediately a directory
+  - shutdown -> shuts down workers, manager and console
