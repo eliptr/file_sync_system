@@ -45,7 +45,7 @@ A C-based file synchronization system designed to monitor directories, sync chan
 Open another terminal and run: <br>
 ./fss_console -l console.log
 <br>
-Available commands: <br>
+- Available commands: <br>
   - add <source> <target> -> adds directory to be backed up and monitored
   - status <directory> -> prints information about a directory (last sync, errors, currently being monitored etc)
   - cancel <source> -> stops monitoring directory
